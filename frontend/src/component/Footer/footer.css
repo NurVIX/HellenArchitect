@@ -1,0 +1,50 @@
+/*--------- FOOTER --------*/
+.footer{
+    background-color: lightgray;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,.3);
+    display: flex;
+
+    position: absolute;
+    width: 100vw;
+    height: 10%;
+}
+.footer-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Socialscontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    padding-top: 45px;
+}
+.SocialTitle-space{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.socialsTitle{
+    padding-left: 10em;
+    font-size: 25px;
+}
+.socialIcon{
+    padding-right: 10em;
+}
+.instagram{
+    font-size: 30px;
+}
+.rightsreserve-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer i {
+    font-size: 25px;
+    color: #383838;
+}
+.footer i:hover{
+    color: rgb(36, 34, 34)
+}

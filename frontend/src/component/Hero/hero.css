@@ -1,0 +1,18 @@
+/*---------HERO --------*/
+.Hero-section{
+    width: 100vw;
+    height:50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+}
+.Hero-Background{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+
+}

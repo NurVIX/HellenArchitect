@@ -1,0 +1,17 @@
+.mainpageContainer{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+.picturesColumnGrid{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.gridRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}

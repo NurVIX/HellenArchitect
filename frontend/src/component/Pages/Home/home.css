@@ -1,0 +1,29 @@
+.ImagesGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: auto;
+    gap: 0px;
+}
+
+.shortphoto{
+    width: 270px;
+    height: 400px;
+}
+
+.mediumphoto{
+    width: 550px;
+    height: 400px;     
+}
+.longphoto{
+    width: 850px;
+    height: 400px ;
+}
+.bottomimage{
+    width: 400px;
+    height: 450px ;
+}
+
