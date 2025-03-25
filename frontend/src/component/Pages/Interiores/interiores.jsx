@@ -7,7 +7,7 @@ import ImagesGrid from "../../ImagesGrid/imagesGrid";
 
 const interiorGrid = [
     {src: "/images/interior/interior_quartos.webp", title: "Quartos", className:"shortPhoto", link:"/quartos"},
-    {src: "/images/interior/interior_gourmet.webp", title: "Gourmet", className:"shortPhoto", link:"/gourmet"},
+    {src: "/images/interior/interior_gourmet.webp", title: "Gourmet", className:"shortPhoto", link:"/Gourmet"},
     {src: "/images/interior/interior_lavabo.webp", title: "Lavabo", className:"shortPhoto", link:"/lavabo"},
     {src: "/images/interior/interior_escritorio.webp", title: "Escritorio", className:"shortPhoto", link:"/escritorio"},
     {src: "/images/interior/interior_sala.webp", title: "Sala", className:"shortPhoto", link:"/Sala"},

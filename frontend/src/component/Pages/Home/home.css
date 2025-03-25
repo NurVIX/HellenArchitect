@@ -11,19 +11,19 @@
 
 .shortphoto{
     width: 270px;
-    height: 400px;
+    height: auto;
 }
 
 .mediumphoto{
     width: 550px;
-    height: 400px;     
+    height: auto;     
 }
 .longphoto{
     width: 850px;
-    height: 400px ;
+    height: auto ;
 }
 .bottomimage{
     width: 400px;
-    height: 450px ;
+    height: auto ;
 }
 

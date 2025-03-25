@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -8,6 +8,10 @@ const Navbar = () => {
 
     const isMainPage = location.pathname === '/';
 
+// creating the state for the menu
+
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen(!isOpen);
 
 return (
     <nav className='navbar'>
@@ -15,17 +19,21 @@ return (
             <div className='LogoSpace'>
                 {isMainPage ? (
                     <img className='LogoImageMain' src={'/images/full_Logo.webp'} alt = "Logo"/>
-                ) : ( <img className='LogoImage' src={'/images/logo_cinza.webp'} alt = "HellenLogo"/> )}    
+                ) : ( < Link to='/' onClick={() => setIsOpen(false)}> <img className='LogoImage' src={'/images/logo_cinza.webp'} alt = "HellenLogo"/> </Link>)}    
             </div>
-            
-            <ul className='navbar-links dropdownbox'>
-                <li><Link to='/Arquitetura'>Arquitetura</Link></li>
-                <li><Link to='/Interiores'>Inteiores</Link></li>
-                <li><Link to='/Escritório'>Escritório</Link></li>
-                <li><Link to='/Mostras'>Mostras</Link></li>
-                <li><Link to='/Sobre'>Sobre</Link></li>
-            </ul>
-        </div>
+
+                {/* creating a dropdown for mobile or tablet*/}
+                <button className='dropdownMenuIcon' onClick={toggleMenu}>☰</button>
+                {/* creating menu for desktop*/}
+                <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
+                    <li><Link to='/Arquitetura' onClick={() => setIsOpen(false)}>Arquitetura</Link></li>
+                    <li><Link to='/Interiores' onClick={() => setIsOpen(false)}>Interiores</Link></li>
+                    <li><Link to='/Escritório' onClick={() => setIsOpen(false)}>Escritório</Link></li>
+                    <li><Link to='/Mostras' onClick={() => setIsOpen(false)}>Mostras</Link></li>
+                    <li><Link to='/Sobre' onClick={() => setIsOpen(false)}>Sobre</Link></li>
+                </ul>
+
+    </div>
     </nav>
     );
 };
