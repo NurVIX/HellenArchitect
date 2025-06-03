@@ -1,0 +1,51 @@
+.central{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align-last: center;
+    padding: 15% 25% 10% 25%;
+}
+.FormPlacement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15%;
+}
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top:5%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+.FormLabel {
+    text-align: left;
+    display: block;
+    width: 50%; 
+    color: #333;
+}
+.MassageForm{
+    height: 200px;
+}
+.ContactButton{
+    background-color: rgb(102, 102, 102);
+    height: 35px;
+    width: 120px;
+    border-radius: 20px;
+    border-style: none;
+    font-family: 'Laviossa';
+    color:white;
+    box-shadow: 2px 1px 8px 2px #a7a4a4;
+}
+input{
+    background-color: lightgray;
+    height: 35px;
+    width: 50%;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 5px 3px 5px rgb(148, 147, 147) inset;
+}
+

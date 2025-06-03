@@ -1,0 +1,33 @@
+.central{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.imageGridArquitetura {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 2fr) ;
+    gap:10%;
+    padding: 20% 20% 10% 20%;
+}
+
+
+/* ------ BUTTON CSS  -----*/
+
+.OrcamentoButton{
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    color: rgb(53, 53, 53);
+    background-color: lightgray;
+    border-radius: 20px;
+    border: 1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 1px 8px 2px #a7a4a4;
+
+}

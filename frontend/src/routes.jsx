@@ -9,8 +9,7 @@ import Arquitetura from "./component/Pages/Arquitetura/arquitetura";
 import O_Escritorio from "./component/Pages/O_Escritorio/Escritorio";
 import Lavabo from "./component/Pages/Interiores/Lavabo/lavabo";
 import AreaGourmet from "./component/Pages/Interiores/Area_Gourmet/areaGourmet";
-
-
+import Contato from "./component/Pages/Contato/contato";
 
 
 
@@ -26,6 +25,7 @@ const PagesRoutes = () => {
                 <Route path="/Escritório" element={<O_Escritorio/>}/>
                 <Route path="/Gourmet" element={<AreaGourmet/>}/>
                 <Route path="/lavabo" element={<Lavabo/>}/>
+                <Route path="/Contato" element={<Contato/>}/>
             </Routes>
             <Footer/>
         </Router>

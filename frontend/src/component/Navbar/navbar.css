@@ -2,10 +2,8 @@
 .navbar {
     background-color: lightgray;
     box-shadow:  0px 3px 5px rgba(0,0,0,.3);
-    width: 100%;
     position: sticky;
     height: 8vh;
-
 }
 .navbarcontainer{
     display: flex;
@@ -15,6 +13,7 @@
 
 
 .LogoSpace{
+
     width: 40vw;
     max-height: 350px;
     display: flex;
@@ -25,35 +24,45 @@
 }
 .LogoImage{
     width: 180px ;
-    height: 220px;
+    height:auto;
     object-fit: contain;
+    position: relative;
+    top: -45%;
 }
 .LogoImageMain{
     width: 100%;
     height:auto;
     object-fit: contain;
+    position: relative;
+    top: -30%;
 } 
+.LinksContainer{
+    float: right;
+    height: 8vh;
+    align-content: center;
+    width: 55%;
+}
 
 .navbar-links{
-    width: 60vw;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     gap: 8%;
     padding-right: 10%;
     font-size: 18px;
     list-style: none;
 }
 
-.navbar-links a{
-    text-decoration: none;
-}
+.navbar-links a,
 .navbar-links a:visited{
+    text-decoration: none;
     color: #464444;
 }
 
+
 .dropdownMenuIcon{
     display: none;
+    float: right;
 }
 
 /*---- creating DROPDOWN-----*/ 

@@ -9,7 +9,7 @@ return (
             <div className="Socialscontainer">
                 <div className="SocialTitle-space">
                     <div className="socialsTitle">Social</div>
-                    <a href="https://www.instagram.com/euhellenrocha/" target="blank" >
+                    <a href="https://www.instagram.com/hellenrochaarquitetura/" target="blank" >
                         <i className="bi bi-instagram"></i>
                     </a>
                 </div>

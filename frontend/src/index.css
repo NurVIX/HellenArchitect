@@ -18,6 +18,13 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Italiana';
+  src: url(./assets/font/Italiana-Regular.ttf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 body{
   font-family: 'Laviossa' ;
   color: #464444;

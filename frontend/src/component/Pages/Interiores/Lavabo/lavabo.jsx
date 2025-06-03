@@ -15,7 +15,7 @@ const Lavabo = () => {
         <>
             <Hero image="/images\interior\LAVABO\LAVABO_HERO.webp"/>
             <div className="GridContainer"> 
-                <ImagesGrid images={lavaboGrid}/>
+                <ImagesGrid images={lavaboGrid} wrapperClassName="imageGridLavabo"/>
             </div> 
         </>
     );

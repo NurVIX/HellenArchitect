@@ -2,11 +2,14 @@ import React from "react";
 import "./sobre.css";
 import Hero from "../../Hero/hero";
 
+const Hero_Sobre = [
+    {src:"../../images/Sobre/Hero_Sobre.webp", title: "Sobre"}
+];
 
 const Sobre = () => {
     return (
         <>
-            <Hero image="../../images/Sobre/Hero_Sobre.webp"/>
+            <Hero image={Hero_Sobre[0]}/>
             <div className="sobreContainer">
                 <div className="sobreTitleContainer">
                     <h2>Olá, seja bem-vindo ao meu universo!</h2>
