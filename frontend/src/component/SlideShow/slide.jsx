@@ -32,7 +32,7 @@ const ImageSlide = ({slides}) => {
                 src={slides[currentIndex].src}
                 alt={slides[currentIndex].title}
                 className="ImageSlides"
-                onClick={slides}
+                onClick={openPhoto}
                 style={{cursor:"pointer"}}
             />
             <div className="nextSlide" onClick={NextImage}>❱</div>
