@@ -21,7 +21,10 @@ const ImageSlide = ({slides}) => {
         };
 
     const openPhoto = () => setIsPhotoOpen(true);
-    const closePhoto = () => setIsPhotoOpen(false);
+    const closePhoto = (e) => {
+        if (e.target === e.currentTarget) { setIsPhotoOpen(false);
+        }
+    };
     
 
     return (
@@ -40,9 +43,14 @@ const ImageSlide = ({slides}) => {
 
         {isPhotoOpen && (
             <div className="backgroundPhotoPopup" onClick={closePhoto}>
-                <img src={slides[currentIndex].src} alt={slides[currentIndex].title} className="Photopopup" onClick={(e) => e.stopPropagation()}
-            />
-            </div>
+                    <div className="previousSlide" onClick={previousImage}>❰</div>
+                    <img
+                        src={slides[currentIndex].src}
+                        alt={slides[currentIndex].title}
+                        className="Photopopup"
+                    />
+                    <div className="nextSlide" onClick={NextImage}>❱</div>
+                </div>  
         )}
         </>
         );
