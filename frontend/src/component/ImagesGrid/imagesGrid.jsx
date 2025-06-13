@@ -11,7 +11,7 @@ const ImagesGrid = ({ images, wrapperClassName }) => {
               <div className="imageContainer">
                 <Link to={image.link}>
                   <div className="imageTitleOverlayBackground">
-                    <div className="imageTitleOverlayText">{image.title}</div>
+                    <div className="imageGRIDTitleOverlayText">{image.title}</div>
                   </div>
                   <img
                     className="gridImage"

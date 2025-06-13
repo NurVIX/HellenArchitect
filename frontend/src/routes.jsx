@@ -10,6 +10,10 @@ import O_Escritorio from "./component/Pages/O_Escritorio/Escritorio";
 import Lavabo from "./component/Pages/Interiores/Lavabo/lavabo";
 import AreaGourmet from "./component/Pages/Interiores/Area_Gourmet/areaGourmet";
 import Contato from "./component/Pages/Contato/contato";
+import Quartos from "./component/Pages/Interiores/Quartos/quartos";
+import Quarto_Master from "./component/Pages/Interiores/Quartos/Master/master";
+import Quarto_Menina from "./component/Pages/Interiores/Quartos/Menina/menina";
+import Quarto_Menino from "./component/Pages/Interiores/Quartos/Menino/menino";
 
 
 
@@ -26,6 +30,10 @@ const PagesRoutes = () => {
                 <Route path="/Gourmet" element={<AreaGourmet/>}/>
                 <Route path="/lavabo" element={<Lavabo/>}/>
                 <Route path="/Contato" element={<Contato/>}/>
+                <Route path="/quartos" element={<Quartos/>}/>
+                <Route path="/Quarto_Master" element={<Quarto_Master/>}/>
+                <Route path="/Quarto_Menina" element={<Quarto_Menina/>}/>
+                <Route path="/Quarto_Menino" element={<Quarto_Menino/>}/>
             </Routes>
             <Footer/>
         </Router>

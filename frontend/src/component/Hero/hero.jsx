@@ -1,10 +1,12 @@
 import React from "react";
 import './hero.css';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Hero  = ({image}) => {
     const location =  useLocation();
+    const navigate = useNavigate();
 
+    console.log(navigate);
     if (!image) return null;
 
     const isHomePage = location.pathname === "/";
@@ -14,7 +16,9 @@ const Hero  = ({image}) => {
             <img className="Hero-Background" src={image.src} alt={image.title} />
             {!isHomePage && (
             <div className="imageTitleOverlayBackground">
-                <div className="imageTitleOverlayText">{image.title}</div>
+                <div className="imageTitleOverlayText">
+                    <span className="returnIcon" onClick={() => navigate(-1)}>❰</span>
+                    {image.title}</div>
             </div>
             )}
         </div>

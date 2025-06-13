@@ -1,0 +1,7 @@
+.imageGridEscritorio{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:5%;
+    padding: 15% 25% 25% 25%;
+    grid-auto-flow: dense;
+}

@@ -1,20 +1,25 @@
 import React from "react";
 import "./quartos.css";
-import Hero from "../../Hero/hero";
-import ImagesGrid from "../../ImagesGrid/imagesGrid";
+import Hero from "../../../Hero/hero";
+import ImagesGrid from "../../../ImagesGrid/imagesGrid";
+
+
+const Hero_Quartos = [
+    {src:"images/Quartos/Hero_QuartoPage.webp", title: "Quartos"},
+];
 
 const QuartoMenu = [
-    {src: "/images/Quartos/Master-QuartoPage.webp", title: "Quartos", className:"shortPhoto", link:"/quartomaster"},
-    {src: "/images/Quartos/Menina-QuartoPage.webp", title: "Quartos", className:"shortPhoto", link:"/quartosmenina"},
-    {src: "/images/Quartos/Menino-QuartoPage.webp", title: "Quartos", className:"shortPhoto", link:"/quartosmenino"},
+    {src: "/images/Quartos/Master-QuartoPage.webp", title: "Quartos Master", link:"/Quarto_Master"},
+    {src: "/images/Quartos/Menina-QuartoPage.webp", title: "Quartos Menina ", link:"/Quarto_Menina"},
+    {src: "/images/Quartos/Menino-QuartoPage.webp", title: "Quartos Menino", link:"/Quarto_Menino"},
 ];
 
 
 const Quartos = () => {
     return (
         <>
-            <Hero image="../../imagens/Quartos/Hero_QuartoPage.webp"/>
-            <ImagesGrid images={QuartoMenu}/>
+            <Hero image={Hero_Quartos[0]}/>
+            <ImagesGrid images={QuartoMenu} wrapperClassName="imageGridQuartos"/>
         </>
     );
 };

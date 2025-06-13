@@ -1,0 +1,6 @@
+.imageGridQuartos{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 15% 25% 15%;
+}
